@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+/* header css start */
+.navbar-light .navbar-nav .nav-link {
+    color: #312e2e;
+    font-weight: 500;
+    text-transform:uppercase;
+    font-size: 18px;
+}
+
+header{
+    background-color: #f6f9f9;
+}
+/* header css closed */
+ /* banner section css start */
+.banner{
+    background-image: url(../images/banner_img.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner h1{
+
+color: #fff;
+
+font-size: 90px;
+
+text-transform: uppercase;
+}
+.banner samp{
+
+display: block;
+
+height: 2px;
+
+width: 100%;
+
+background: #15a4fa;
+}
+.banner p{
+
+margin: 0;
+
+color: #fff;
+
+margin: 30px 0;
+}
+.banner a{
+
+}
+.btn-action{
+
+color: #fff;
+
+padding: 15px 30px;
+
+border: 1px solid #15a4fa;
+
+margin-top: 20px;
+transition: .6s all ease-in-out;
+}
+.hg{
+    min-height: 90vh;
+}
+
+.btn-action:hover{
+    border: 1px solid #15a4fa;
+    color: #fff;
+    background-color: #15a4fa;
+}
+.icon{
+    
+color: #fff;
+    
+font-size: 20px;
+    
+position: absolute;
+    
+top: 90%;
+    
+left: 50%;
+    
+transform: translateX(-10px);
+animation: updown 1s linear infinite;
+animation-direction: alternate;
+}
+@keyframes updown{
+0%{
+    top:85%;
+}
+100%{
+    top:90%;
+}
+}
+/* banner section css end */
+/* .simple_pure section css start  */
+.simple_pure{
+    height: 280px;
+    background: #f6f9f9;
+}
+.simple_pure h1{margin-top: 50px;padding: 5px 0px;}
+.simple_pure p{
+
+font-size: 18px;
+
+line-height: 30px;
+
+color: #8e8585;
+}
+/* .simple_pure section css end  */
+
+/* feature_content css start  */
+.feature_content{
+
+}
+.feature_content h3{
+    
+color: #2d3950;
+    
+font-size: 20px;
+}
+
+.feature_content p{
+    
+color: #2d3950;
+    
+padding: 5px 0px;
+    
+font-size: 15px;
+}
+.icon_box{
+
+height: 80px;
+
+width: 80px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,1e5799+0,48baff+0,48baff+0,48baff+0,7db9e8+0,48baff+50,5fc3ff+50,5fc3ff+50,48baff+100,48baff+100,5fc3ff+100,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #1e5799 0%, #48baff 0%, #48baff 0%, #48baff 0%, #7db9e8 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 50%, #48baff 100%, #48baff 100%, #5fc3ff 100%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#1e5799 0%,#48baff 0%,#48baff 0%,#48baff 0%,#7db9e8 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 50%,#48baff 100%,#48baff 100%,#5fc3ff 100%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#1e5799 0%,#48baff 0%,#48baff 0%,#48baff 0%,#7db9e8 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 50%,#48baff 100%,#48baff 100%,#5fc3ff 100%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+
+margin: auto;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin-bottom: 15px;
+}
+.icon_box i{
+
+font-size: 40px;
+
+color: #fff;
+}
+/* feature_content css end  */
+
+/* showcase section start  */
+.showcase_section{background: #f6f9f9;}
+.showcase_section h1{
+    
+color: #2d3950;
+}
+.showcase_section p{
+    
+color: #2d3950;
+    
+padding: 5px;
+}
+.work img{
+    height: 100%;
+    width: 100%;
+}
+.work{
+    position: relative;
+   
+}
+.work::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #15a4fa;
+    opacity: .6;
+    transition: 1s all ease-in-out;
+}
+.work::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #15a4fa;
+    opacity: .6;
+    transition: 1s all ease-in-out;
+}
+.work:hover::before{
+    width: 50%;
+
+}
+.work:hover::after{
+    width: 50%;
+}
+.icon_list{
+
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+opacity: 0;
+}
+.icon_list ul{
+    
+padding: 0;
+    
+margin: 0;
+    
+display: flex;
+    
+justify-content: space-between;
+}
+.icon_list ul li{
+    
+list-style: none;
+    
+width: 40px;
+    
+height: 40px;
+    
+text-align: center;
+    
+line-height: 30px;
+    
+border: 2px solid white;
+    
+margin-left: 10px;
+    
+color: #fff;
+    
+font-size: 25px;
+    
+border-radius: 5px;
+}
+.work:hover .icon_list{
+    opacity: 1;
+}
+
+
+
+/* showcase section end  */
+form{
+    text-align: end;
+    
+   
+}
+.form-control:focus{
+box-shadow: none;
+
+}
+form input[type="submit"]{
+    
+/* padding: 0; */
+    
+/* border: none; */
+    
+background: no-repeat;
+    
+border: 1px solid #15a4fa;
+    
+padding: 5px 20px;
+    
+border-radius: 3px;
+color: #fff;
+}
+form input[type="submit"]:hover{
+    border: 1px solid #15a4fa;
+    background-color:#15a4fa ;
+    color: #fff;
+    transition: 1s all ease-in-out;
+}
+form input[type="checkbox"]{
+
+}
+footer{
+    background-image: url(../images/footer_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 90vh;
+}
+footer::before{
+    content: '';
+    background-color: #2d3950;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .8;
+}
+.footer_content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.footer_content h1{
+
+color: #fff;
+
+font-weight: 100;
+
+margin: 0;
+margin-top: 50px;
+margin-bottom: 15px;
+}
+.footer_content p{
+    
+color: #fff;
+}
+.form-control{
+    background-color: #2d3950;
+    border-color: #fff;
+    opacity: .5;
+}
+
+    
+
+.last_footer{
+
+background: #f6f9f9;
+
+height: 50px;
+}
+.last_footer h6{
+    
+color: #b8b9b9;
+    
+font-size: 20px;
+}
+.social_icon{
+
+}
+.social_icon ul{
+    
+list-style: none;
+    
+display: flex;
+    
+justify-content: flex-end;
+}
+.social_icon ul li{
+    
+}
+.social_icon ul li a{
+    
+padding-left: 20px;
+    
+color: #fff;
+    
+font-size: 20px;
+    
+background: #15a4fa;
+    
+border: 6px solid white;
+    
+padding-right: 20px;
+    
+border-radius: 8px;
+    
+padding-bottom: 5px;
+    
+padding-top: 5px;
+}
+
+.social_icon ul li a::before{
+    content: '';
+    box-sizing: border-box
+
+}
